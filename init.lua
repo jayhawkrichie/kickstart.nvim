@@ -259,7 +259,7 @@ vim.o.termguicolors = true
 
 -- Keymaps for better default experience
 -- See `:help vim.keymap.set()`
-vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
+-- vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 -- Remap for dealing with word wrap
@@ -545,7 +545,7 @@ vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.opt.smartindent = true
 vim.opt.swapfile = false
-vim.opt.undodir = os.getenv("HOME") .."/.config/nvim/undodir"
+vim.opt.undodir = "$XDG_CONFIG_HOME/nvim/undodir"
 vim.opt.undofile = true
 vim.opt.incsearch = true
 vim.opt.wrap = false
